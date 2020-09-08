@@ -12,6 +12,8 @@
 </head>
 <body>
 	<div class="container">
+	
+	<a href="/dashboard">Back</a>
 		<div style="text-align: center">
 			<h1>Song</h1>
 			<h2>Title: <c:out value="${song.title}" /></h2> <br/>
@@ -20,7 +22,8 @@
 			
 			<form action="/song/${song.id }" method="post">
 				<input type="hidden" name="_method" value="delete">
-				<input type="submit" value="Delete">
+				<!-- <input type="submit" value="Delete"> -->
+				<button class="btn btn-danger" type="submit" value="Delete">Delete</button>
 			</form>
 		</div>
 	</div>

@@ -11,23 +11,25 @@
 <title>Create</title>
 </head>
 <body>
-	<div class="container">
-	<div style="text-align: center">
+<div class="container">
+<a href="/dashboard">Back</a>
+	<div style="width: 30rem" class="m-auto">
 		<h1>Create a Song</h1>
 		<form:form action ="/songs/new" method="post" modelAttribute="song">
+			<div class="form-group">
 			<p>
 				Title:
-				<form:input path="title"/>
+				<form:input path="title" class="form-control"/>
 				<form:errors path="title"/>
 			</p>
 			<p>
 				Artist:
-				<form:input path="artist"/>
+				<form:input path="artist" class="form-control"/>
 				<form:errors path="artist"/>
 			</p>
 			<p>
 				Rating:
-				<form:select path="rating">
+				<form:select path="rating" class="form-control">
 					<form:option  value="1">1</form:option>
 					<form:option value="2">2</form:option>
 					<form:option value="3">3</form:option>
@@ -37,8 +39,9 @@
 				<form:errors path="rating"/>
 			</p>
 			<button type="submit" class="btn btn-primary">Submit</button>
+			</div>
 		</form:form>
 	</div>
-	</div>
+</div>
 </body>
 </html>

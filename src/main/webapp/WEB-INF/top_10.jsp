@@ -11,10 +11,12 @@
 <title>Top 10</title>
 </head>
 <body>
+<div class="container">
+	<a href="/dashboard">Back</a>
 	<h1 style="text-align: center">Top 10</h1>
 	<div>
-		<table class="table">
-			<thead>
+		<table class="table table-hover table-striped">
+			<thead class="thead-dark">
 				<tr>
 					<th>Title</th>
 					<th>Artist</th>
@@ -33,5 +35,6 @@
 			</tbody>
 		</table>
 	</div>
+</div>
 </body>
 </html>

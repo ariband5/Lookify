@@ -12,22 +12,20 @@
 </head>
 <body>
 	<div class="container">
+	<a href="/dashboard">Back</a>
 	<div style="text-align: center">
-		<h1>Search</h1>
 		<div>
-			Songs by artist: <c:out value="${results[0].artist }" />
+			<h1>Songs by artist: <c:out value="${results[0].artist }" /></h1>
 		</div>
 		<div>
 			<form action="/search">
 				<input name="search" />
-				<button type="submit">New Search</button>
+				<button class="btn btn-info" type="submit">New Search</button>
 			</form>
 		</div>
-		<div>
-			<a href="/dashboard">Dashboard</a>
-		</div>
-		<table class="table">
-			<thead>
+
+		<table class="table table-striped table-hover mt-2">
+			<thead class="thead-dark">
 				<tr>
 					<th>Title</th>
 					<th>Artist</th>

@@ -12,10 +12,11 @@
 </head>
 <body>
 	<div class="container">
+	<a href="/">Home</a>
 	<div style="text-align: center">
 		<h1>Dashboard</h1>
 		<div>
-			<a href="songs/new">Add New</a>
+			<a href="songs/new">Add New Song</a>
 		</div>
 		<div>
 			<a href="top_10">Top 10</a>
@@ -23,12 +24,12 @@
 		<div>
 			<form action="/search">
 				<input name="search" />
-				<button type="submit">Search</button>
+				<button class="btn btn-info" type="submit">Search</button>
 			</form>
 		</div>
 		
-		<table class="table">
-			<thead>
+		<table class="table table-hover table-striped mt-2">
+			<thead class="thead-dark">
 				<tr>
 					<th>Title</th>
 					<th>Artist</th>
@@ -47,7 +48,8 @@
 						<td>
 							<form action="/song/${song.id }" method="post">
 								<input type="hidden" name="_method" value="delete">
-								<input type="submit" value="Delete">
+								<!-- <input type="submit" value="Delete"> -->
+								<button class="btn btn-danger" type="submit" value="Delete">Delete</button>
 							</form>
 						</td>
 					</tr>
